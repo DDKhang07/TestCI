@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Link Shortener &middot; shrtcode</title>
+  <meta name="description" content="With this free Link Shortener you can make Links shorter and easier to remember. Just enter a Link into the form and click on the above Button to generate a short Link. When visiting the short-Link, the short-Link will immediately redirect you to the long Link.">
+  <!-- Search Engines -->
+  <meta itemprop="name" content="Link Shortener &middot; shrtcode">
+  <meta itemprop="description" content="With this free Link Shortener you can make Links shorter and easier to remember. Just enter a Link into the form and click on the above Button to generate a short Link. When visiting the short-Link, the short-Link will immediately redirect you to the long Link.">
+  <meta itemprop="image" content="https://shrtco.de/assets/img/meta/general.png">
+  <!-- Facebook -->
+  <meta property="og:url" content="https://shrtco.de/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Link Shortener &middot; shrtcode">
+  <meta property="og:description" content="With this free Link Shortener you can make Links shorter and easier to remember. Just enter a Link into the form and click on the above Button to generate a short Link. When visiting the short-Link, the short-Link will immediately redirect you to the long Link.">
+  <meta property="og:image" content="https://shrtco.de/assets/img/meta/general.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Link Shortener &middot; shrtcode">
+  <meta name="twitter:description" content="With this free Link Shortener you can make Links shorter and easier to remember. Just enter a Link into the form and click on the above Button to generate a short Link. When visiting the short-Link, the short-Link will immediately redirect you to the long Link.">
+  <meta name="twitter:image" content="https://shrtco.de/assets/img/meta/general.png">
+
+  <link rel="stylesheet" href="/css/style.css?v=7.4">
+  <link rel="preconnect" href="https://api.shrtco.de">
+
+  <link rel="stylesheet" href="//rsms.me/inter/inter.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/sharebuttons.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://tibush.b-cdn.net/css/jquery-modal.css">
+
+  <script src="https://tibush.b-cdn.net/js/jquery.js"></script>
+  <script src="https://tibush.b-cdn.net/js/twemoji.js" async></script>
+  <script src="https://tibush.b-cdn.net/js/jquery-modal.js" async></script>
+  <script src="https://tibush.b-cdn.net/js/qrious.js" async></script>
+  <script src="/js/script.js?v=4" async></script>
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png?v=3">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png?v=3">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png?v=3">
+  <link rel="manifest" href="/img/favicons/site.webmanifest?v=3">
+  <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg?v=3" color="#21253F">
+  <link rel="shortcut icon" href="/img/favicons/favicon.ico?v=3">
+  <meta name="apple-mobile-web-app-title" content="shrtcode">
+  <meta name="application-name" content="shrtcode">
+  <meta name="msapplication-TileColor" content="#21253F">
+  <meta name="msapplication-config" content="/img/favicons/browserconfig.xml?v=3">
+  <meta name="theme-color" content="#21253F">
+
+  <meta name="google-site-verification" content="KTS2oep75qIzSV_2YeK0EYeyxLw3-Bpn7_bUdPQ_8wQ" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "shrtcode",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "WEB",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+  </head>
+<body>
+
+<div class="container">
+
+  <div class="main-area">
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+$(function(){
+  var success = true;
+  $.getJSON('https://api.shrtco.de/v2/status', function(result){
+    if(!result.ok){
+      success = false;
+    }
+  }).fail(function(){
+    success = false;
+  }).always(function(){
+    if(!success){
+      $('.header').append('<div class="server-error">The <b>shrtcode</b> server isn\'t reachable at the moment. Please check your internet connection, try it again in a minute, or contact <a href="mailto:info@tibush.com">info@tibush.com</a></div>');
+    }
+  });
+});
+</script>
+
+    <div class="inner after-about-box">
+      <h1>Link Shortener</h1>
+      <div class="file"><div class="form-container">
+  <label>
+    Enter a Link:
+    <input class="main-input" type="text" placeholder="example.com" id="input">
+  </label>
+  <button type="submit" class="main-submit" id="submit">→</button>
+  <label>
+
+    <div class="radio-toolbar">
+      Short domain:
+      <input type="radio" id="domain1" name="domain" value="shrtco.de" checked>
+      <label for="domain1">shrtco.de</label>
+
+      <input type="radio" id="domain2" name="domain" value="9qr.de">
+      <label for="domain2">9qr.de</label>
+
+      <input type="radio" id="domain3" name="domain" value="shiny.link">
+      <label for="domain3">shiny.link</label>
+    </div>
+  </label>
+</div>
+
+<script>
+$('#submit').on('click', function(){
+  var input = $('#input').val();
+  var html = '';
+  loading();
+  $.getJSON('https://api.shrtco.de/v2/shorten?url='+encodeURIComponent(input), function(data){
+    var short_link = '';
+    var full_short_link = '';
+    var domain = $('input[name="domain"]:checked').val();
+    if(domain == 'shrtco.de'){
+      short_link = data.result.short_link;
+      full_short_link = data.result.full_short_link;
+    }else if(domain == '9qr.de'){
+      short_link = data.result.short_link2;
+      full_short_link = data.result.full_short_link2;
+    }else if(domain == 'shiny.link'){
+      short_link = data.result.short_link3;
+      full_short_link = data.result.full_short_link3;
+    }
+    html = '<small>Link generated!</small> <a class="green-text bold" href="'+full_short_link+'" target="_blank">'+short_link+'</a>';
+    html = html + '<br>' + shareButtons(full_short_link, 'Sharing a link...', '');
+    addToHistory(html);
+    $('#input').val('');
+    success();
+    showResult(html);
+  }).fail(function(response){
+    var data = response.responseJSON;
+    var error = data.error;
+    var error_code = data.error_code;
+    if(error_code == 10){
+      displayNotice('The link you tried to shorten is a <b>disallowed link</b> which you can\'t shorten. Reason: <pre><code>'+data.disallowed_reason+'</code></pre>', '/disallowed', 'Sorry.');
+    }else if(error_code == 3){
+      displayNotice('Please wait a second and try again.', '', 'Not so fast!');
+    }else{
+      showError(); /* fallback for all other errors */
+    }
+  }).always(function(){
+    loadingFinished();
+  });
+});
+</script>
+</div>
+    </div>
+    <div id="pre-results"></div>
+    <div class="result" id="result">
+      <!-- the result goes here... -->
+    </div>
+    <div class="info-area">
+      <p class="clear-btn">Clear history</p>
+    </div>
+
+  
+<link rel="stylesheet" type="text/css" href="//shrtco.de/layout/sad.css">
+
+
+  <script src="https://tibushlabs.de/a/t.js" async defer></script>
+  <noscript><img src="https://tibushlabs.de/a/post"></noscript>
+
+</body>
+</html>
